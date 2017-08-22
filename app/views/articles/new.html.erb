@@ -1,0 +1,28 @@
+<h1>New Article!</h1>
+
+<br>
+<br>
+
+<p>
+	Create Your Own New Article. . . !!
+</p>
+<p>
+	<%= form_for(@article) do |a|  %>
+		<p>
+		<%= a.label :Article_Title %>
+		<%= a.text_field :title %>
+		</p>
+		<p>
+		<%= a.label :Article_Body %>
+		<%= a.text_area :post %>
+		</p>
+		<p>
+		<%= a.label :Posted_on %>
+		<%= a.date_field :date_posted %>
+		</p>
+		<p>
+		<%= a.submit %>
+		</p>
+		
+	<% end %>
+</p>

@@ -1,0 +1,15 @@
+<h1>Listing articles</h1>
+<table border=1>
+	<tr>
+		<th>Title</th>
+		<th>Body</th>
+		<th>Date</th>
+	</tr>
+	<% @article.each do |article| %>
+		<tr>
+			<td><%= article.title %></td>
+			<td><%= article.post %></td>
+			<td><%= article.date_posted%></td>
+		</tr>
+	<% end %>
+</table>
